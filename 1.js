@@ -6,7 +6,8 @@ function handleClickButton(el) {
     const exp = `${input.value}${el.innerText}`;
     input.value = exp;
     if( ['+' , '-', '*', '/'].includes(el.innerText) ) return
-    result.value = eval(exp);
+    //evaluate expression
+    result.value = eval(exp); 
 }
 
 function reset() {
